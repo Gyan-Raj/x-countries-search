@@ -27,11 +27,14 @@ const Countries = () => {
   };
 
   const filterCountries = (countryList, searchCountry) => {
-    return countryList.filter((country) => {
-      return country.name.common
-        .toLowerCase()
-        .includes(searchCountry.toLowerCase());
-    });
+    return (
+      countryList &&
+      countryList.filter((country) => {
+        return country.name.common
+          .toLowerCase()
+          .includes(searchCountry.toLowerCase());
+      })
+    );
   };
   let filteredList = filterCountries(countryList, searchCountry);
   console.log(countryList);
