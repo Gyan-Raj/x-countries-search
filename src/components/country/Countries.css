@@ -1,0 +1,35 @@
+.countries {
+  height: 100vh;
+  width: 100vw;
+}
+.input {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 10%;
+  width: 100%;
+}
+input {
+  width: 40%;
+  height: 50%;
+  border-radius: 5px;
+  padding-left: 1rem;
+}
+.container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-wrap: wrap;
+  gap: 20px;
+}
+.countryCard {
+  height: 150px;
+  width: 120px;
+  border: 1px solid gray;
+  border-radius: 5px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  padding: 0.5rem;
+}
